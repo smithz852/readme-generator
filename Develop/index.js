@@ -1,57 +1,56 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
+const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 inquirer
  .prompt([
    {
+    type: 'input',
+    message: 'What is the project name?',
+    name: 'project',
+   },
+   {
     input: 'input',
-    question: 'What is the project name?',
-    message: 'Enter Info:',
+    message: 'Are there required installations?',
+    name: 'installations',
    },
    {
-    input: 'user input',
-    question: 'Are there required installations?',
-    prompt: 'Enter Info:',
+    input: 'input',
+    message: 'How is the application used?',
+    name: 'usage',
    },
    {
-    input: 'user input',
-    question: 'How is the application used?',
-    message: 'Enter Info:',
+    input: 'input',
+    message: 'What license is used?',
+    name: 'license',
    },
    {
-    input: 'user input',
-    question: 'What license is used?',
-    message: 'Enter Info:',
+    input: 'input',
+    message: 'Who are the contributors?',
+    name: 'contributors',
    },
    {
-    input: 'user input',
-    question: 'Who are the contributors?',
-    message: 'Enter Info:',
+    input: 'input',
+    message: 'What tests were performed?',
+    name: 'tests',
    },
    {
-    input: 'user input',
-    question: 'What tests were performed?',
-    message: 'Enter Info:',
-   },
-   {
-    input: 'user input',
-    question: 'Are there any questions you would like to list?',
-    message: 'Enter Info:',
+    input: 'input',
+    message: 'Are there any questions you would like to list?',
+    name: 'questions',
    },
 
 ])
  .then((data) =>
-  fs.writeFile('README.md', stringify(data), (err) =>
+  fs.writeFile('README.md', generateMarkdown(data), (err) =>
   err ? console.error(err) : console.log('README has been created!')
   ));
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
