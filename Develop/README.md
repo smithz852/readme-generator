@@ -1,0 +1,1 @@
+{"project":"readme","installations":"No","usage":"it gernearoes readmes","license":"mit","contributors":"na","tests":"node","questions":"does this work?"}
