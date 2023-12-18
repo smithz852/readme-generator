@@ -1,12 +1,17 @@
 # readme ![License Badge](https://img.shields.io/badge/License-MIT-blue)
   
 ## Table of Contents:
-  1. Installations
-  2. Usage
-  3. License
-  4. Contributions
-  5. Tests
-  6. Questions
+  1. Description
+  2. Installations
+  3. Usage
+  4. License
+  5. Contributions
+  6. Tests
+  7. Questions
+
+## Description
+
+generates readmes
 
 ## Installations
 
@@ -14,7 +19,7 @@ yes
 
 ## Usage
 
-terminal
+in terminal
 
 ## License
 

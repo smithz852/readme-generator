@@ -13,6 +13,11 @@ inquirer
     name: 'project',
    },
    {
+    type: 'input',
+    message: 'How would you describe your project?',
+    name: 'description',
+   },
+   {
     input: 'input',
     message: 'Are there required installations?',
     name: 'installations',
