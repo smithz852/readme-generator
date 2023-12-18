@@ -50,13 +50,18 @@ inquirer
    },
    {
     type: 'input',
-    message: 'Where should questions be directed?',
-    name: 'questions',
+    message: 'What is your GitHub username?',
+    name: 'username',
    },
+   {
+    type: 'input',
+    message: 'What is your email for questions related to the repo?',
+    name: 'email', 
+   }
 
 ])
  .then((data) =>
-  fs.writeFile('README.md', generateMarkdown(data), (err) =>
+  fs.writeFile('../README.md', generateMarkdown(data), (err) =>
   err ? console.error(err) : console.log('README has been created!')
   ));
 
