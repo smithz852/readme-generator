@@ -7,19 +7,20 @@
   4. License
   5. Contributions
   6. Tests
-  7. Questions
+  7. Credits
+  8. Questions
 
 ## Description
 
-generates readmes
+
 
 ## Installations
 
-yes
+
 
 ## Usage
 
-in terminal
+
 
 ## License
 
@@ -28,13 +29,17 @@ This application is covered under the following license: MIT
     
 ## Contributions
 
-none
+
 
 ## Tests
 
-no
+
+
+## Credits
+
+
 
 ## Questions
 
-me
+
 

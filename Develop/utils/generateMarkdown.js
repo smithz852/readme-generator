@@ -4,7 +4,7 @@ let licenseLink = ''
 
 //Give brief credit to shield io
 function renderLicenseBadge(license) {
-if (license === '') {
+if (license == 'No License') {
   licenseBadge = ``
   return
 } else {
@@ -25,8 +25,8 @@ if (license === '') {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
-  if (license === '') {
-    return ''
+  if (license == 'No License') {
+    return ' '
   } else {
     return `
 ## License
@@ -50,7 +50,8 @@ function generateMarkdown(data) {
   4. License
   5. Contributions
   6. Tests
-  7. Questions
+  7. Credits
+  8. Questions
 
 ## Description
 
@@ -71,6 +72,10 @@ ${data.contributors}
 ## Tests
 
 ${data.tests}
+
+## Credits
+
+${data.credits}
 
 ## Questions
 
