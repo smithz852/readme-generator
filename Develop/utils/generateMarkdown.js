@@ -41,7 +41,7 @@ This application is covered under the following license: ${license}
 function generateMarkdown(data) {
   let license = data.license
   console.log(data)
-  return `# ${data.project} ${renderLicenseBadge(license)}
+  return `# ${data.project} ![License Badge](${renderLicenseBadge(license)})
   
 ## Table of Contents:
   1. Installations
