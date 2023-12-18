@@ -1,4 +1,4 @@
-# readme
+# readme https://img.shields.io/badge/License-MIT-blue
   
 # Table of Contents:
   1. Installations
@@ -10,25 +10,25 @@
 
 # Installations
 
-node and vscode
+
 
 # Usage
 
-run in terminal with node
+
 
 # License
 
-MIT
+MIT 
 
 # Contributions
 
-none
+
 
 # Tests
 
-none
+
 
 # Questions
 
-smithz852
+
 

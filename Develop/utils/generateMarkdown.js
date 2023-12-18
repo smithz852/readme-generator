@@ -1,6 +1,16 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+let licenseBadge = ''
+
+//Give brief credit to shield io
+function renderLicenseBadge(license) {
+if (license === '') {
+  licenseBadge = ``
+  return licenseBadge
+} else {
+  licenseBadge = `https://img.shields.io/badge/License-${license}-blue`
+   return licenseBadge
+ }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -12,8 +22,9 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let license = data.license
   console.log(data)
-  return `# ${data.project}
+  return `# ${data.project} ${renderLicenseBadge(license)}
   
 # Table of Contents:
   1. Installations
@@ -33,7 +44,7 @@ ${data.usage}
 
 # License
 
-${data.license}
+${data.license} 
 
 # Contributions
 
