@@ -4,8 +4,7 @@ let licenseLink = ''
 
 //Give brief credit to shield io
 function renderLicenseBadge(license) {
-if (license == 'No License') {
-  licenseBadge = ``
+if (license == 'No License' || ' ') {
   return
 } else {
   licenseBadge = `https://img.shields.io/badge/License-${license}-blue`
@@ -25,7 +24,7 @@ if (license == 'No License') {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
-  if (license == 'No License') {
+  if (license == 'No License' || ' ') {
     return ' '
   } else {
     return `
@@ -79,7 +78,9 @@ ${data.credits}
 
 ## Questions
 
-${data.questions}
+https://https://github.com/${data.username}
+
+${data.email}
 
 `;
 }
