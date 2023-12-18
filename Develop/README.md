@@ -1,4 +1,4 @@
-# readme generator https://img.shields.io/badge/License-MIT-blue
+# readme ![License Badge](https://img.shields.io/badge/License-MIT-blue)
   
 ## Table of Contents:
   1. Installations
@@ -10,11 +10,11 @@
 
 ## Installations
 
-node and vscode
+yes
 
 ## Usage
 
-run in terminal with node js
+terminal
 
 ## License
 
@@ -31,5 +31,5 @@ no
 
 ## Questions
 
-smithz852
+me
 
