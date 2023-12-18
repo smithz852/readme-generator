@@ -5,9 +5,9 @@ let licenseLink = ''
 //Give brief credit to shield io
 function renderLicenseBadge(license) {
 if (license == 'No License' || ' ') {
-  return
+  return ' '
 } else {
-  licenseBadge = `https://img.shields.io/badge/License-${license}-blue`
+  licenseBadge = `![License Badge](https://img.shields.io/badge/License-${license}-blue)`
   renderLicenseSection(license)
    return licenseBadge
  }
@@ -40,7 +40,7 @@ This application is covered under the following license: ${license}
 function generateMarkdown(data) {
   let license = data.license
   console.log(data)
-  return `# ${data.project} ![License Badge](${renderLicenseBadge(license)})
+  return `# ${data.project} ${renderLicenseBadge(license)}
   
 ## Table of Contents:
   1. Description
