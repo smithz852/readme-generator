@@ -43,14 +43,14 @@ function generateMarkdown(data) {
   return `# ${data.project} ${renderLicenseBadge(license)}
   
 ## Table of Contents:
-  1. Description
-  2. Installations
-  3. Usage
-  4. License
-  5. Contributions
-  6. Tests
-  7. Credits
-  8. Questions
+  1. [Description](#-description)
+  2. [Installations](#-installations)
+  3. [Usage](#-usage)
+  4. [License](#-license)
+  5. [Contributions](#-contributions)
+  6. [Tests](#-tests)
+  7. [Credits](#-credits)
+  8. [Questions](#-questions)
 
 ## Description
 
@@ -78,7 +78,7 @@ ${data.credits}
 
 ## Questions
 
-https://https://github.com/${data.username}
+https://github.com/${data.username}
 
 ${data.email}
 
