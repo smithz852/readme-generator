@@ -14,6 +14,38 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   console.log(data)
   return `# ${data.project}
+  
+# Table of Contents:
+  1. Installations
+  2. Usage
+  3. License
+  4. Contributions
+  5. Tests
+  6. Questions
+
+# Installations
+
+${data.installations}
+
+# Usage
+
+${data.usage}
+
+# License
+
+${data.license}
+
+# Contributions
+
+${data.contributors}
+
+# Tests
+
+${data.tests}
+
+# Questions
+
+${data.questions}
 
 `;
 }
