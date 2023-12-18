@@ -24,7 +24,7 @@ inquirer
    },
    {
     input: 'input',
-    message: 'What license is used?',
+    message: 'Which license is used?',
     name: 'license',
    },
    {
@@ -34,12 +34,12 @@ inquirer
    },
    {
     input: 'input',
-    message: 'What tests were performed?',
+    message: 'Are there any recommended tests for usage?',
     name: 'tests',
    },
    {
     input: 'input',
-    message: 'Are there any questions you would like to list?',
+    message: 'Where should questions be directed?',
     name: 'questions',
    },
 
