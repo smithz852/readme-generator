@@ -4,7 +4,7 @@ let licenseLink = ''
 
 //renders license badge
 function renderLicenseBadge(license) {
-if (license === 'No License') {
+if (license == 'No License') {
   return ' '
 } else {
   licenseBadge = `![License Badge](https://img.shields.io/badge/License-${license}-blue)`
@@ -15,7 +15,7 @@ if (license === 'No License') {
 
 // renders license section
 function renderLicenseSection(license) {
-  if (license === 'No License') {
+  if (license == 'No License') {
     return ' '
   } else {
     return `
