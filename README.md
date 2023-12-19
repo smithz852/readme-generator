@@ -1,4 +1,4 @@
-# readme  
+# readme ![License Badge](https://img.shields.io/badge/License-MIT-blue)
   
 ## Table of Contents:
   1. [Description](#description)
@@ -12,31 +12,36 @@
 
 ## Description
 
-generator
+
 
 ## Installations
 
-yes
+
 
 ## Usage
 
-in terminal
- 
+
+
+## License
+
+This application is covered under the following license: MIT
+
+    
 ## Contributions
 
-na
+
 
 ## Tests
 
-no
+
 
 ## Credits
 
-na
+
 
 ## Questions
 
-https://github.com/smithz852
+GitHub: https://github.com/
 
-zachsmith852@gmail.com
+Email: 
 
