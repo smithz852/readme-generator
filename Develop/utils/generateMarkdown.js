@@ -2,9 +2,9 @@
 let licenseBadge = ''
 let licenseLink = ''
 
-//Give brief credit to shield io
+//renders license badge
 function renderLicenseBadge(license) {
-if (license == 'No License' || ' ') {
+if (license === 'No License') {
   return ' '
 } else {
   licenseBadge = `![License Badge](https://img.shields.io/badge/License-${license}-blue)`
@@ -13,18 +13,9 @@ if (license == 'No License' || ' ') {
  }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//  licenseLink =  ''
-
-// }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// renders license section
 function renderLicenseSection(license) {
-
-  if (license == 'No License' || ' ') {
+  if (license === 'No License') {
     return ' '
   } else {
     return `
@@ -36,7 +27,7 @@ This application is covered under the following license: ${license}
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// generates readme file
 function generateMarkdown(data) {
   let license = data.license
   console.log(data)
