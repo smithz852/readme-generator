@@ -1,4 +1,4 @@
-# reasdme  
+# dsfa ![License Badge](https://img.shields.io/badge/License-MIT-blue)
   
 ## Table of Contents:
   1. [Description](#description)
@@ -21,7 +21,12 @@
 ## Usage
 
 
- 
+
+## License
+
+This application is covered under the following license: MIT
+
+    
 ## Contributions
 
 
@@ -36,7 +41,7 @@
 
 ## Questions
 
-GitHub: https://github.com/
-
+  GitHub: https://github.com/zach
+  
 Email: 
 

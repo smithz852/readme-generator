@@ -27,9 +27,21 @@ This application is covered under the following license: ${license}
   }
 }
 
+// generates GitHub username if applicable
+function generateUser(user) {
+ if (user == '') {
+  return ''
+ } else {
+  return `
+GitHub: https://github.com/${user}
+  `
+ }
+}
+
 // generates readme file
 function generateMarkdown(data) {
   let license = data.license
+  let user = data.username
   console.log(data)
   return `# ${data.project} ${renderLicenseBadge(license)}
   
@@ -68,9 +80,7 @@ ${data.tests}
 ${data.credits}
 
 ## Questions
-
-GitHub: https://github.com/${data.username}
-
+${generateUser(user)}
 Email: ${data.email}
 
 `;
