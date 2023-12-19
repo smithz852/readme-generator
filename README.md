@@ -1,14 +1,14 @@
 # readme  
   
 ## Table of Contents:
-  1. [Description](#-description)
-  2. [Installations](#-installations)
-  3. [Usage](#-usage)
-  4. [License](#-license)
-  5. [Contributions](#-contributions)
-  6. [Tests](#-tests)
-  7. [Credits](#-credits)
-  8. [Questions](#-questions)
+  1. [Description](#description)
+  2. [Installations](#installations)
+  3. [Usage](#usage)
+  4. [License](#license)
+  5. [Contributions](#contributions)
+  6. [Tests](#tests)
+  7. [Credits](#credits)
+  8. [Questions](#questions)
 
 ## Description
 
@@ -20,7 +20,7 @@ yes
 
 ## Usage
 
-terminal
+in terminal
  
 ## Contributions
 
@@ -36,7 +36,7 @@ na
 
 ## Questions
 
-https://https://github.com/zach
+https://github.com/smithz852
 
-lk;jlk
+zachsmith852@gmail.com
 
