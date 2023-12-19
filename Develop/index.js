@@ -2,7 +2,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
-
 // array of prompted questions for generator
 inquirer
  .prompt([
@@ -10,6 +9,14 @@ inquirer
     type: 'input',
     message: 'What is the project name?',
     name: 'project',
+    validate: function nameValidation(input) {
+        if (input === '') {
+            console.log('Please Enter A Name For Your Project')
+            return false;
+        } else {
+            return true;
+        }
+    },
    },
    {
     type: 'input',
@@ -31,6 +38,13 @@ inquirer
     message: 'Which license is used?',
     choices: ['MIT','GNU General Public License v3.0', 'GNU General Public License v2.0', 'Mozilla Public License 2.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License', 'Boost Software License 1.0', 'GNU Affero General Public License v3.0', 'GNU Lesser General Public License v2.1', 'No License'],
     name: 'license',
+    validate: function listValidation(input) {
+        if (input == '') {
+            return false;
+        } else {
+            return true;
+        }
+    },
    },
    {
     type: 'input',
@@ -64,4 +78,3 @@ inquirer
   fs.writeFile('../README.md', generateMarkdown(data), (err) =>
   err ? console.error(err) : console.log('README has been created!')
   ));
-
